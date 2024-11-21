@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Lato';
+  src:
+    url("./fonts/Lato/Lato-Black.ttf"),
+    url("./fonts/Lato/Lato-BlackItalic.ttf"),
+    url("./fonts/Lato/Lato-Bold.ttf"),
+    url("./fonts/Lato/Lato-BoldItalic.ttf"),
+    url("./fonts/Lato/Lato-Italic.ttf"),
+    url("./fonts/Lato/Lato-Light.ttf"),
+    url("./fonts/Lato/Lato-LightItalic.ttf"),
+    url("./fonts/Lato/Lato-Regular.ttf"),
+    url("./fonts/Lato/Lato-Thin.ttf"),
+    url("./fonts/Lato/Lato-ThinItalic.ttf");
+}
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
