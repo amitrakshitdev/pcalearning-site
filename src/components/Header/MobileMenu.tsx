@@ -99,7 +99,7 @@ export default function MobileMenu() {
               <NavigationMenu.Root
                 orientation="vertical"
                 className={clsx([
-                  "min-w-[220px] bg-white",
+                  "min-w-[180px] bg-white",
                   "relative",
                   "text-primary"
                 ])}
@@ -107,12 +107,16 @@ export default function MobileMenu() {
                 <NavigationMenu.List className={clsx(["min-w-[240px]"])}>
                   {menuItems.map((item, index) => (
                     <NavigationMenu.Item key={index}>
-                      {!item.children ? <NavigationMenu.Trigger className={clsx([
-                        "py-2 px-4",
-                        "w-full text-left"
-                      ])}>
-                        <Link href={item?.href || "/"} className="uppercase">{item.name}</Link>
-                      </NavigationMenu.Trigger> :
+                      {!item.children ?
+                        <Link href={item?.href || "/"}>
+                          <NavigationMenu.Trigger className={clsx([
+                            "py-3 px-4 uppercase",
+                            "w-full text-left"
+                          ])}>
+                            {item.name}
+                          </NavigationMenu.Trigger>
+                        </Link>
+                        :
                         <>
                           <NavigationMenu.Trigger
                             className={clsx([
@@ -126,11 +130,13 @@ export default function MobileMenu() {
                           </NavigationMenu.Trigger>
                           <NavigationMenu.Content>
                             <NavigationMenu.Sub orientation="vertical" className={clsx(["bg-blue-50"])}>
-                              {item.children.map(subItem => (
-                                <NavigationMenu.Item>
-                                  <NavigationMenu.Trigger className="py-3 px-7">
-                                    <Link className="uppercase" href={subItem.href}>{subItem.name}</Link>
-                                  </NavigationMenu.Trigger>
+                              {item.children.map((subItem, index) => (
+                                <NavigationMenu.Item key={index}>
+                                  <Link href={subItem.href}>
+                                    <NavigationMenu.Trigger className="py-3 px-7 uppercase w-full text-left">
+                                      {subItem.name}
+                                    </NavigationMenu.Trigger>
+                                  </Link>
                                 </NavigationMenu.Item>
                               ))}
                             </NavigationMenu.Sub>
