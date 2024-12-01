@@ -12,11 +12,11 @@ export default function Header() {
             ["sm:bg-tr"])}>
             {/* For mobile */}
             <div className={clsx(
-                ["sm:hidden h-16"],
-                ["w-full px-[10%]"],
+                ["sm:hidden h-16 pl-4 pr-3"],
+                ["w-full"],
                 ["bg-primary flex items-center justify-between"]
             )}>
-                <h2 className="text-white text-4xl">LOGO</h2>
+                <Logo href="/" type="secondary" text1="Pakrashi Computer Academy" />
                 <MobileMenu />
             </div>
             {/* For desktop/wide screen */}
@@ -29,8 +29,7 @@ export default function Header() {
                         "bg-primary w-full h-3/5",
                         "flex justify-around items-center"
                     ])}>
-                    <Logo />
-                    <h3> Log in </h3>
+                    <Logo href="/" type="main" text1="Pakrashi Computer Academy" text2="Konnagar, West Bengal"/>
                 </div>
                 <div className={clsx([
                     "w-full h-2/5",

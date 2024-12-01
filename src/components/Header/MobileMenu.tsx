@@ -7,6 +7,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { SyntheticEvent, useState } from "react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,11 +80,10 @@ export default function MobileMenu() {
             variants={overlayVariants}
             transition={{ duration: 0.3 }}
           >
-            {/* Here the company logo should be there */}
             {/* Menu Items */}
             <motion.div
               className={clsx([
-                "menu-items-wrapper absolute top-0 right-0 bottom-0 min-w-[220px] bg-white",
+                "menu-items-wrapper absolute top-0 right-0 bottom-0 w-56 bg-white",
                 "flex flex-col items-center",
                 "drop-shadow-xl",
               ])}
@@ -93,13 +93,13 @@ export default function MobileMenu() {
               variants={menuVariants}
               transition={{ duration: 0.3 }}
             >
-              <div className={clsx(["h-20 w-40", "bg-gray-400"])}>
-                Logo
+              <div className={clsx(["w-full h-auto py-2", "bg-primary"])}>
+                <Logo type="secondary" text1="P C Academy" />
               </div>
               <NavigationMenu.Root
                 orientation="vertical"
                 className={clsx([
-                  "min-w-[180px] bg-white",
+                  "w-full bg-white",
                   "relative",
                   "text-primary"
                 ])}
