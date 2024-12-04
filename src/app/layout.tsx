@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={clsx(lato.className, ["min-h-dvh"])}>
+    <html lang="en" className={clsx(lato.className, ["min-h-dvh"])} data-theme="light">
       <body className={clsx(["min-h-dvh"])}>{children}</body>
     </html>
   )
