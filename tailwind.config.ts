@@ -10,9 +10,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "#3C70B8"
+        primary: "var(--color-primary)",
+        background: "var(--color-background)",
       },
       fontFamily: {
         lato: "Lato"
