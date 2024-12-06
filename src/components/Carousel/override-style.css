@@ -1,0 +1,15 @@
+.swiper-button-prev {
+	position: relative;
+	left: 5rem !important;
+	color: #fff !important;
+}
+
+.swiper-button-next {
+	position: relative;
+	right: 5rem !important;
+	color: #fff !important;
+}
+
+.swiper-pagination-bullet {
+	background-color: #fff !important;
+}

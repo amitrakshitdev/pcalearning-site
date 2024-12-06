@@ -30,11 +30,11 @@ export default function Header() {
                         "flex justify-around items-center"
                     ])}>
                     <Logo href="/" type="main" text1="Pakrashi Computer Academy" text2="Konnagar, West Bengal"/>
+                    <div></div>
                 </div>
                 <div className={clsx([
                     "w-full h-2/5",
-                    "flex justify-center items-center",
-                    "border-b-black border-b"
+                    "flex justify-center items-center"
                 ])}>
                     <Navigation />
                 </div>
