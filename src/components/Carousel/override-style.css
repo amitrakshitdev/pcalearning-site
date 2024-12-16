@@ -13,3 +13,10 @@
 .swiper-pagination-bullet {
 	background-color: #fff !important;
 }
+
+@media (max-width : 640px) {
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none !important;
+	}
+}

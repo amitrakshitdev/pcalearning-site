@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import Header from "@/components/Header/Header";
 import clsx from 'clsx';
 import { Lato } from 'next/font/google';
 
@@ -19,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx(lato.className, ["min-h-dvh"])} data-theme="light">
-      <body className={clsx(["min-h-dvh"])}>{children}</body>
+      <body className={clsx(["min-h-dvh"])}>
+        <Header />
+        {children}
+        {/* Footer */}
+        </body>
     </html>
   )
 }

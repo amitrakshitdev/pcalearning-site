@@ -71,7 +71,8 @@ export default function MobileMenu() {
         {isOpen && (
           <motion.div
             id="menu-overlay"
-            className={clsx(["fixed inset-0 bg-black bg-opacity-5",
+            className={clsx(["fixed inset-0 bg-black bg-opacity-50",
+              "z-50"
             ])}
             onClickCapture={toggleState}
             initial="hidden"
