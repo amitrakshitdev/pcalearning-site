@@ -9,7 +9,7 @@ import Logo from "./Logo";
 export default function Header() {
     return (
         <header className={clsx(["w-full h-auto"],
-            ["sm:bg-tr"])}>
+            ["bg-background"])}>
             {/* For mobile */}
             <div className={clsx(
                 ["sm:hidden h-16 pl-4 pr-3"],

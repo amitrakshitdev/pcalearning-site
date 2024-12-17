@@ -11,12 +11,16 @@
   --color-primary: #3C70B8; /* Brand primary color */
   --color-background: #fffff4; /* Light background */
   --color-text: #000000; /* Light text color */
+  --color-text-secondary: #FFFFFF; /* Light secondary text color */
+  --color-custom-grey: #e5e7eb; /* Custom gray color */
 }
 
 :root[data-theme="dark"] {
-  --color-primary: #3C70B8; /* Same primary color */
-  --color-background: #121100; /* Dark background (gray-900 equivalent) */
-  --color-text: #E2E8F0; /* Light text for dark mode (gray-300 equivalent) */
+  --color-primary: #5a84bf; /* Same accent color for brand consistency */
+  --color-background: #202020; /* Dark background (almost black) */
+  --color-text: #EDEDED; /* Light gray text for better readability on dark backgrounds */
+  --color-text-secondary: #FFFFFF;
+  --color-custom-grey: #484848;
 }
 
 * {

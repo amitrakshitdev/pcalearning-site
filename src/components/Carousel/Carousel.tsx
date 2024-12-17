@@ -38,8 +38,8 @@ export default function Carousel() {
                     {/* Mobile */}
                     <div className={clsx(["block sm:hidden", "fixed inset-0", "flex items-center justify-center", "bg-black bg-opacity-50"])}>
                         <div className={clsx(["w-full h-[70%]", "flex flex-col justify-around items-center", "px-4"])}>
-                            <h1 className={clsx(["text-white text-5xl font-bold", "text-center"])}>{imageData.displayText}</h1>
-                            <Link href={"/login"} className={clsx(["bg-primary px-4 y-2 rounded", "text-white text-lg", "shadow-sm"])}>
+                            <h1 className={clsx(["text-textSecondaryColor text-5xl font-bold", "text-center"])}>{imageData.displayText}</h1>
+                            <Link href={"/login"} className={clsx(["bg-primary px-4 y-2 rounded", "text-textSecondaryColor text-lg", "shadow-sm"])}>
                                Log in
                             </Link>
                         </div>
@@ -47,7 +47,7 @@ export default function Carousel() {
                     {/* desktop */}
                     <div className={clsx(["hidden sm:flex", "fixed inset-0", "flex items-center justify-center", "bg-black bg-opacity-50"])}>
                         <div className={clsx(["w-4/5 h-full", "flex items-center justify-center"])}>
-                            <h1 className={clsx(["text-white text-7xl font-bold", "text-center"])}>{imageData.displayText}</h1>
+                            <h1 className={clsx(["text-textSecondaryColor text-7xl font-bold", "text-center"])}>{imageData.displayText}</h1>
                         </div>
                     </div>
                 </SwiperSlide>

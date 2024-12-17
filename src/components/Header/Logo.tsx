@@ -24,7 +24,7 @@ export default function Logo({ type, href, text1, text2, size, bgStyleClass, tex
     // Determine conditional values based on type
     const isMain = type === "main";
 
-    const containerClass = clsx([isMain ? "hidden sm:grid max-h-20" : "block sm:hidden max-h-16", "grid grid-cols-[80px,1fr] grid-rows-2 text-white", bgStyleClass]);
+    const containerClass = clsx([isMain ? "hidden sm:grid max-h-20" : "block sm:hidden max-h-16", "grid grid-cols-[80px,1fr] grid-rows-2 text-textSecondaryColor", bgStyleClass]);
 
     const logoSize = size ?? (isMain ? 55 : 40);
 

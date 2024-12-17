@@ -12,6 +12,9 @@ export default {
       colors: {
         primary: "var(--color-primary)",
         background: "var(--color-background)",
+        textColor: "var(--color-text)",
+        textSecondaryColor: "var(--color-text-secondary)",
+        customGreyColor: "var(--color-custom-grey)",
       },
       fontFamily: {
         lato: "Lato"

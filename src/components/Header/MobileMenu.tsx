@@ -84,7 +84,7 @@ export default function MobileMenu() {
             {/* Menu Items */}
             <motion.div
               className={clsx([
-                "menu-items-wrapper absolute top-0 right-0 bottom-0 w-56 bg-white",
+                "menu-items-wrapper absolute top-0 right-0 bottom-0 w-56 bg-background",
                 "flex flex-col items-center",
                 "drop-shadow-xl",
               ])}
@@ -100,7 +100,7 @@ export default function MobileMenu() {
               <NavigationMenu.Root
                 orientation="vertical"
                 className={clsx([
-                  "w-full bg-white",
+                  "w-full bg-background",
                   "relative",
                   "text-primary"
                 ])}
