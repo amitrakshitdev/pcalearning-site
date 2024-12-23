@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
-import ourStoryImage from "@/assets/images/our-stories-image.avif";
+import ourStoryImage from "@/assets/images/our-stories-image.jpg";
 import Link from "next/link";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
