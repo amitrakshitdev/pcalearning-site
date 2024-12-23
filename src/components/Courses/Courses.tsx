@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import CourseCards from "./CourseCards";
-import Button, { ButtonLink } from "../ui/Buttons/Buttons";
+import { ButtonLink } from "../ui/Buttons/Buttons";
 
 const courses = [
     {

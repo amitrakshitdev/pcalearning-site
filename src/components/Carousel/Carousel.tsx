@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import clsx from "clsx";
-import { useMediaQuery } from "@/hooks/media-query-hook";
+// import { useMediaQuery } from "@/hooks/media-query-hook";
 import "./override-style.css";
 import "swiper/css";
 import "swiper/css/effect-fade";

@@ -37,9 +37,6 @@ const Marquee: React.FC<MarqueeProps> = ({ children, duration = 50, className })
 	useEffect(() => {
 		console.log("animationPositions", animationPositions);
 	}, [animationPositions]);
-	function onMouseHover() {
-
-	}
 	
   return (
     <div className={clsx("overflow-hidden relative w-full", "min-h-5", className)}>

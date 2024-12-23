@@ -2,8 +2,8 @@ import clsx from "clsx";
 import Image from "next/image";
 import ourStoryImage from "@/assets/images/our-stories-image.avif";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareFacebook, FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
 import Button from "../ui/Buttons/Buttons";
 export default function OurStory() {
     return (

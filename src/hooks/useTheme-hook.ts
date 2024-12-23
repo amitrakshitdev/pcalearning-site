@@ -1,12 +1,12 @@
 import { useState } from "react";
 type ThemeType = "dark" | "light"
-function theme() {
+function useTheme() {
 	const currTheme = document.documentElement.getAttribute("data-theme") as ThemeType;
-	const [theme, setTheme] = useState<ThemeType>(currTheme);
-	function useTheme() {
+	const [, setTheme] = useState<ThemeType>(currTheme);
+	function getTheme() {
 		return setTheme;
 	}
-	return useTheme;
+	return getTheme;
 }
 
-export default theme;
+export default useTheme;

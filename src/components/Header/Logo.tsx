@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import mainLogoImg from "@/assets/logo/main-logo.png";
 import { Montserrat } from "next/font/google";
-import { useMemo } from "react";
+// import { useMemo } from "react";
 import Link from "next/link";
 const montserratFont = Montserrat({
     subsets: ["latin"],

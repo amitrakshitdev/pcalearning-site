@@ -5,7 +5,7 @@ type ButtonProps = {
 	buttonType: "primary-rounded" | "square" | "outlined";
 } 
 
-export default function Button({ children, buttonType, className, ...rest}: React.PropsWithChildren<React.ButtonHTMLAttributes<{}> & ButtonProps>): React.ReactElement {
+export default function Button({ children, buttonType, className, ...rest}: React.PropsWithChildren<React.ButtonHTMLAttributes<object> & ButtonProps>): React.ReactElement {
 	let styleClassNames = "";
 	switch (buttonType) {
 		case "primary-rounded": {
@@ -18,7 +18,7 @@ export default function Button({ children, buttonType, className, ...rest}: Reac
     return <button className={clsx([className, "min-w-6 min-h-4", styleClassNames])} {...rest}>{children}</button>;
 }
 
-export function ButtonLink({ children, buttonType, className, href, ...rest}: React.PropsWithChildren<React.AnchorHTMLAttributes<{}> & ButtonProps>): React.ReactElement {
+export function ButtonLink({ children, buttonType, className, href, ...rest}: React.PropsWithChildren<React.AnchorHTMLAttributes<object> & ButtonProps>): React.ReactElement {
 	let styleClassNames = "";
 	switch (buttonType) {
 		case "primary-rounded": {
