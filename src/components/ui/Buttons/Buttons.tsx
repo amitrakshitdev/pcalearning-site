@@ -25,6 +25,14 @@ export function ButtonLink({ children, buttonType, className, href, ...rest}: Re
 			styleClassNames = "rounded-full bg-primary text-textSecondaryColor";
 			break;
 		}
+		case "square": {
+			styleClassNames = "rounded-sm bg-primary text-textSecondaryColor";
+			break;
+		}
+		case "outlined": {
+			styleClassNames = "rounded-sm border-2 border-primary text-primary";
+			break;
+		}
 	}
 
 	return <Link href={href || "/"} className={clsx([className, "min-w-6 min-h-4 text-center", styleClassNames])} {...rest}>{children}</Link>;

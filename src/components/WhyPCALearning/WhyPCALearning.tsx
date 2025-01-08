@@ -36,7 +36,7 @@ const contents = [
 
 export default function WhyPCALearning() {
     return (
-        <section className={clsx(["Why-PCA-learning bg-customGreyColor w-full", "sm:p-0"])}>
+        <section id="why-pca-learning" className={clsx(["Why-PCA-learning bg-customGreyColor w-full", "sm:p-0"])}>
             <div className={clsx(["relative bg-background px-0 pt-4 flex flex-col items-center", "rounded-md shadow-md overflow-hidden", "sm:rounded-none"])}>
                 <h1 className={clsx(["text-5xl text-primary text-center font-bold", "mb-6", "md:mt-8 md:mb-10"], ["lg:text-7xl"])}>Why PCA Learning?</h1>
                 <div className={clsx(["feature-cards-wrapper",

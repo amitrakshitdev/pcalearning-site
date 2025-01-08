@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import caroselImg1 from "@/assets/images/carousel_image_1.jpg";
 import caroselImg2 from "@/assets/images/carousel_image_2.jpg";
-import Link from "next/link";
+import { ButtonLink } from "../ui/Buttons/Buttons";
 const carouselImages = [
     { image: caroselImg1, displayText: "Welcome to PCA Learning" },
     { image: caroselImg2, displayText: "We Can Make a Difference" },
@@ -20,7 +20,7 @@ const carouselImages = [
 export default function Carousel() {
     return (
         <Swiper
-            className={clsx(["w-full sm:aspect-[21/9] bg-sky-200", "aspect-[4/5]"])}
+            className={clsx(["w-full sm:aspect-[21/8] bg-sky-200", "aspect-[4/5]"])}
             modules={[Navigation, Autoplay, EffectFade, Pagination]}
             pagination={{ enabled: true, clickable: true }}
             navigation={{ enabled: true }}
@@ -40,9 +40,9 @@ export default function Carousel() {
                     <div className={clsx(["block sm:hidden", "fixed inset-0", "flex items-center justify-center", "bg-black bg-opacity-50"])}>
                         <div className={clsx(["w-full h-[70%]", "flex flex-col justify-around items-center", "px-4"])}>
                             <h1 className={clsx(["text-textSecondaryColor text-5xl font-bold", "text-center"])}>{imageData.displayText}</h1>
-                            <Link href={"/login"} className={clsx(["bg-primary px-4 y-2 rounded", "text-textSecondaryColor text-lg", "shadow-sm"])}>
+                            <ButtonLink hidden buttonType="square" href={"/login"} className={clsx(["px-3 py-1 shadow-sm"])}>
                                Log in
-                            </Link>
+                            </ButtonLink>
                         </div>
                     </div>
                     {/* desktop */}
