@@ -1,6 +1,7 @@
 import Carousel from "@/components/Carousel/Carousel";
 import Courses from "@/components/Courses/Courses";
 import OurStory from "@/components/OurStory/OurStory";
+import Testemonials from "@/components/Testemonials/Testemonials";
 import Marquee from "@/components/ui/Marquee/Marquee";
 import WhyPCALearning from "@/components/WhyPCALearning/WhyPCALearning";
 import clsx from "clsx";
@@ -15,6 +16,7 @@ export default function Home() {
             <OurStory />
             <Courses />
             <WhyPCALearning />
+            <Testemonials />
         </>
     );
 }
