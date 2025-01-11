@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={clsx(lato.className, ["min-h-dvh"])} data-theme="light">
-      <body className={clsx(["min-h-dvh", "bg-background"])}>
+      <body className={clsx(["flex flex-col min-h-dvh", "bg-background"])}>
         <Header />
         {children}
         {/* Footer */}

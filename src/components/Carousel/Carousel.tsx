@@ -40,15 +40,18 @@ export default function Carousel() {
                     <div className={clsx(["block sm:hidden", "fixed inset-0", "flex items-center justify-center", "bg-black bg-opacity-50"])}>
                         <div className={clsx(["w-full h-[70%]", "flex flex-col justify-around items-center", "px-4"])}>
                             <h1 className={clsx(["text-textSecondaryColor text-5xl font-bold", "text-center"])}>{imageData.displayText}</h1>
-                            <ButtonLink hidden buttonType="square" href={"/login"} className={clsx(["px-3 py-1 shadow-sm"])}>
-                               Log in
+                            <ButtonLink buttonType="square" href={"/contact-us"} className={clsx(["px-3 py-1 shadow-sm rounded-sm"])}>
+                                Contact us
                             </ButtonLink>
                         </div>
                     </div>
                     {/* desktop */}
                     <div className={clsx(["hidden sm:flex", "fixed inset-0", "flex items-center justify-center", "bg-black bg-opacity-50"])}>
-                        <div className={clsx(["w-4/5 h-full", "flex items-center justify-center"])}>
+                        <div className={clsx(["w-4/5 h-full", "flex flex-col items-center justify-center"])}>
                             <h1 className={clsx(["text-textSecondaryColor text-7xl font-bold", "text-center"])}>{imageData.displayText}</h1>
+                        <ButtonLink buttonType="square" href={"/contact-us"} className={clsx(["absolute px-5 py-2 shadow-sm rounded-sm bottom-[10%] lg:text-2xl"])}>
+                                Contact us
+                            </ButtonLink>
                         </div>
                     </div>
                 </SwiperSlide>
