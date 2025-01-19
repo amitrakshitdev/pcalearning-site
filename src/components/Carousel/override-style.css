@@ -1,10 +1,14 @@
-.swiper-button-prev {
+.swiper-button-prev::after,.swiper-button-next::after {
+	color: #fff !important;
+}
+
+#main-carousel .swiper-button-prev::after {
 	position: relative;
 	left: 5rem !important;
 	color: #fff !important;
 }
 
-.swiper-button-next {
+#main-carousel>.swiper-button-next::after {
 	position: relative;
 	right: 5rem !important;
 	color: #fff !important;
@@ -15,6 +19,7 @@
 }
 
 @media (max-width : 640px) {
+
 	.swiper-button-prev,
 	.swiper-button-next {
 		display: none !important;

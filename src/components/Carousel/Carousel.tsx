@@ -20,7 +20,8 @@ const carouselImages = [
 export default function Carousel() {
     return (
         <Swiper
-            className={clsx(["w-full sm:aspect-[21/8] bg-sky-200", "aspect-[4/5]"])}
+            id="main-carousel"
+            className={clsx(["w-full sm:aspect-[21/9] bg-sky-200", "aspect-[4/5]"])}
             modules={[Navigation, Autoplay, EffectFade, Pagination]}
             pagination={{ enabled: true, clickable: true }}
             navigation={{ enabled: true }}
