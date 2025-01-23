@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin, FaSquareFacebook, FaSquareXTwitter, FaPhone } 
 export default function ContactUs() {
     return (
 		<>
-        <section id="contact-us" className="ContactUs flex-1 relative w-full bg-primary">
+        <section id="contact-us" className="ContactUs relative min-h-full w-full bg-primary">
             <div className="w-full h-full flex flex-col items-center bg-background rounded-b-md overflow-hidden shadow-md">
                 <div className="h-full w-full text-textColor flex flex-col px-6 py-4 md:px-12 md:py-10 lg:px-32 lg:py-20 max-w-[1200px]">
                     <h1 className="text-5xl font-bold text-center text-primary mb-4 lg:text-7xl">{"Let's Connect!"}</h1>

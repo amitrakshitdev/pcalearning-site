@@ -7,36 +7,43 @@ const courses = [
         name: "School Computer",
         class: "Class VI to Class XII",
         boards: ["ICSE", "ISC", "CBSE", "WBBSE", "WBCHSE"],
+        href: "/courses#school-computer",
     },
     {
         name: "Diploma",
         class: "(CST/IT)",
         boards: ["For all"], // No specific boards mentioned
+        href: "/courses#diploma",
     },
     {
         name: "B.Tech",
         class: "All Streams",
         boards: [], // No specific boards mentioned
+        href: "/courses#btech",
     },
     {
         name: "BCA",
         class: "Bachelor in Computer Application", // No class information provided
         boards: ["For all"], // No specific boards mentioned
+        href: "/courses#bca",
     },
     {
         name: "B.Sc",
         class: "in Computer Science",
         boards: ["For all"], // No specific boards mentioned
+        href: "/courses#bsc",
     },
     {
         name: "MCA",
         class: "Masters in Computer Application", // No class information provided
         boards: ["For all"], // No specific boards mentioned
+        href: "/courses#mca",
     },
     {
         name: "Entrance Exam Preparation",
         class: "JECA (MCA Entrance) / GATE (M.Tech Entrance)",
         boards: [], // No specific boards mentioned
+        href: "/courses#entrance-exam-preparation",
     },
 ];
 
@@ -69,7 +76,7 @@ export default function Courses() {
                                             <h2 className={clsx(["text-2xl font-bold", "my-2"])}>{course.name ?? ""}</h2>
                                             <p className={clsx(["text-base", "mb-1"])}>{course.class ?? ""}</p>
                                             <p className={clsx(["text-sm font-light", "mb-2"])}>{course.boards.length ? course.boards.join("/") : ""}</p>
-                                            <ButtonLink buttonType="primary-rounded" className={clsx(["py-1 px-4 text-center w-auto self-center"])}>
+                                            <ButtonLink href={course.href} buttonType="primary-rounded" className={clsx(["py-1 px-4 text-center w-auto self-center"])}>
                                                 More info
                                             </ButtonLink>
                                         </CourseCards.CourseDetails>
