@@ -71,7 +71,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" className={clsx(lato.className, ["min-h-dvh"])} data-theme="dark">
+        <html lang="en" className={clsx(lato.className, ["min-h-dvh"])} data-theme="light">
             <body className={clsx(["flex flex-col h-dvh", "bg-background"])}>
                 <Header />
                 <div className={clsx(["relative flex-1 overflow-y-auto"])}>{children}</div>
