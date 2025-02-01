@@ -1,0 +1,53 @@
+{
+    "courseName": "School Computer",
+    "shortDescription": "School level Computer Curriculum of  CBSE/ICSE/ISC/WBBSE/WBCHSE from Class VI to Class XII with programming languages like Python, JAVA, C, C++, QBASIC, HTML etc.",
+    "data": [
+        {
+            "board": "ICSE",
+            "class": "Class XI and Class X",
+            "subjects": [
+                "Computer Applications (Subject Code: 86) ",
+                "Robotics And Artificial Intelligence (Subject Code: 66)"
+            ]
+        },
+        {
+            "board": "ISC",
+            "class": "Class XI and Class XII",
+            "subjects": [
+                "Computer Science (Subject Code: 868)"
+            ]
+        },
+        {
+            "board": "CBSE",
+            "class": "Class IX and Class X",
+            "subjects": [
+                "Artificial Intelligence (Subject Code: 417)",
+                "Information Technology (Subject Code: 402)",
+                "Data Science (Subject Code: 419)",
+                "Computer Applications (Subject Code: 165)"
+            ]
+        },
+        {
+            "board": "CBSE",
+            "class": "Class XI and Class XII",
+            "subjects": [
+                "Artificial Intelligence (Subject Code: 417)",
+                "Information Technology (Subject Code: 843)",
+                "Data Science (Subject Code: 844)",
+                "Computer Science (Subject Code: 083)",
+                "Informatics Practices (Subject Code: 065)"
+            ]
+        },
+        {
+            "board": "WBCHSE",
+            "class": "Class XI and Class XII",
+            "subjects": [
+                "Computer Science (Subject Code: COMS)",
+                "Modern Computer Application (Subject Code: COMA)",
+                "Data Science (Subject Code: DTSC)",
+                "Artificial Intelligence (Subject Code: ARTI)",
+                "Cyber Security (Subject Code: CBST)"
+            ]
+        }
+    ]
+}

@@ -12,6 +12,7 @@ export default {
       colors: {
         primary: "var(--color-primary)",
         'primary-50': "var(--color-primary-50)",
+        secondary: "var(--color-secondary)",
         background: "var(--color-background)",
         textColor: "var(--color-text)",
         textSecondaryColor: "var(--color-text-secondary)",
