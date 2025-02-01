@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import FeatureCard from "../UI/Cards/FeatureCard";
+import FeatureCard from "../ui/Cards/FeatureCard";
 
 const contents = [
 	{
