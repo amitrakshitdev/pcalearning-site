@@ -1,0 +1,76 @@
+{
+    "courseName": "BCA",
+    "shortDescription": "Guidance to different subject papers (Theory and Practical) of Bachalor in Computer Application (BCA) of different universities like MAKAUT/UEM/IGNOU etc. are offered.",
+    "data": [
+        {
+            "board": "",
+            "class": "Semester 1",
+            "subjects": [
+                "Digital Electronics",
+                "Programming in C Language"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 2",
+            "subjects": [
+                "Computer Architecture",
+				"Basics of Web Design using HTML, CSS, JavaScript"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 3",
+            "subjects": [
+                "Programming in Python Language",
+				"Data Structure using C Programming Language"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 4",
+            "subjects": [
+                "Database Management System",
+				"Operating System",
+				"Software Engineering"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 5",
+            "subjects": [
+                "PHP Programming using MYSQL",
+				"Object Oriented Programming using JAVA Programming Language"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 6",
+            "subjects": [
+                "Advance JAVA Programming with Web Application",
+				"Computer Networks",
+				"Unix and Shell Programming"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 7",
+            "subjects": [
+               "Data Warehousing and Data Mining",
+			   "Machine Learning",
+			   "Cyber Security"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 8",
+            "subjects": [
+                "Cloud Computing",
+				"Block Chain Technology",
+				"Artificial Intelligence",
+				"Statistical Analysis with R Programming Language"
+            ]
+        }
+
+    ]
+}

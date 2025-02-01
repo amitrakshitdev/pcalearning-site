@@ -10,6 +10,7 @@
 
 :root[data-theme="light"] {
   --color-primary: #3C70B8; /* Brand primary color */
+  --color-secondary: #75500d; /* Brand secondary color */
   --color-primary-50: hsl(210, 100%, 99%); /* Brand primary color */
   --color-background: #fffff4; /* Light background */
   --color-text: #000000; /* Light text color */
@@ -19,6 +20,7 @@
 
 :root[data-theme="dark"] {
   --color-primary: #3e6caa; /* Same accent color for brand consistency */
+  --color-secondary: #5a3c08;  /* Brand secondary color */
   --color-primary-50: #26292c; /* Same accent color for brand consistency */
   --color-background: #202020; /* Dark background (almost black) */
   --color-text: #EDEDED; /* Light gray text for better readability on dark backgrounds */

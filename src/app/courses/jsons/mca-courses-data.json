@@ -1,0 +1,41 @@
+{
+    "courseName": "MCA",
+    "shortDescription": "Guidance to different subject papers (Theory and Practical) of Master of Computer Application (MCA) of different universities like MAKAUT/UEM/IGNOU etc. are offered.",
+    "data": [
+        {
+            "board": "",
+            "class": "Semester 1",
+            "subjects": [
+                "Programming in Python Language",
+                "Database Management System",
+				"Computer Organization and Computer Architecture"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 2",
+            "subjects": [
+                "Data Structure using Python Programming Language",
+				"Cyber Security",
+				"Formal Language and Automata Theory",
+				"Introduction to IoT"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 3",
+            "subjects": [
+                "Software Engineering",
+				"Artificial Intelligence",
+				"Design and Analysis of Algorithm",
+				"PHP Programming using MYSQL",
+				"Cloud Computing",
+				"Data Science",
+				"Data Warehousing and Data Mining",
+				"Machine Learning"
+            ]
+        }
+        
+
+    ]
+}

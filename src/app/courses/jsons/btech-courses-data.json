@@ -1,0 +1,71 @@
+{
+    "courseName": "B.Tech",
+    "shortDescription": "Guidance to different subject papers (Theory and Practical) of B.Tech (CSE/IT/AI etc) of different universities like MAKAUT/UEM etc are offered.",
+    "data": [
+        {
+            "board": "",
+            "class": "Semester 2",
+            "subjects": [
+                "Programming in C Language"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 3",
+            "subjects": [
+                "Data Structure using C Programming Language",
+                "Computer Organization",
+                "Digital Electronics",
+                "Programming in Python Language"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 4",
+            "subjects": [
+                "Computer Architecture",
+                "Formal Language and Automata Theory",
+                "Design and Analysis of Algorithms"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 5",
+            "subjects": [
+                "Software Engineering",
+                "Object Oriented Programming in JAVA",
+                "Artificial Intelligence",
+                "Compiler Design",
+                "Operating System"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 6",
+            "subjects": [
+                "Database Management System",
+                "Computer Networks",
+                "Distributed Systems"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 7",
+            "subjects": [
+                "Machine Learning",
+                "Soft Computing",
+                "Multimedia Technology"
+            ]
+        },
+        {
+            "board": "",
+            "class": "Semester 8",
+            "subjects": [
+                "Cryptography and Network Security",
+                "Internet of Things (IoT)",
+                "Big Data Analysis",
+                "E Commerce and ERP"
+            ]
+        }
+    ]
+}
