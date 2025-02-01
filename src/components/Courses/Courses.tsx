@@ -13,7 +13,7 @@ const courses = [
         name: "Diploma",
         class: "(CST/IT)",
         boards: ["For all"], // No specific boards mentioned
-        href: "/courses#diploma",
+        href: "/courses#polytechnic",
     },
     {
         name: "B.Tech",
@@ -43,7 +43,7 @@ const courses = [
         name: "Entrance Exam Preparation",
         class: "JECA (MCA Entrance) / GATE (M.Tech Entrance)",
         boards: [], // No specific boards mentioned
-        href: "/courses#entrance-exam-preparation",
+        href: "/courses#entrance-exam",
     },
 ];
 
@@ -59,7 +59,7 @@ export default function Courses() {
                     <div
                         className={clsx([
                             "relative course-card-wrapper",
-                            "w-full max-h-[500px] px-3 py-10 overflow-scroll",
+                            "w-full px-3 py-10 overflow-scroll",
                             "flex justify-around gap-y-8 gap-x-6 flex-wrap",
                             "lg:px-[20%] sm:max-h-none md:py-14 md:gap-y-10",
                         ])}
@@ -69,7 +69,7 @@ export default function Courses() {
                                 <>
                                     <CourseCards.CourseCardWrapper
                                         key={index}
-                                        className={clsx(["relative py-4 px-4 min-h-48", "self-center justify-self-center", "w-full", ""])}
+                                        className={clsx(["relative py-4 px-4 min-h-48", "self-center justify-self-center", "w-full"])}
                                         index={index + 1}
                                     >
                                         <CourseCards.CourseDetails className={clsx(["text-center h-full flex-1 flex flex-col justify-between"])}>
