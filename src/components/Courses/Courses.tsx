@@ -51,7 +51,7 @@ export default function Courses() {
     return (
         <section className={clsx(["Courses bg-customGreyColor p-4 w-full", "sm:p-0"])}>
             <div className={clsx(["relative bg-background px-0 pt-4 flex flex-col items-center", "rounded-md shadow-md overflow-hidden", "sm:rounded-none"])}>
-                <h1 className={clsx(["text-5xl text-primary text-center font-bold", "mb-6", "md:mt-8 md:mb-10"], ["lg:text-7xl"])}>Our Courses</h1>
+                <h1 className={clsx(["text-5xl text-primary text-center font-bold underline", "mb-6", "md:mt-8 md:mb-10"], ["lg:text-7xl"])}>Our Courses</h1>
                 <div className={clsx(["video-bg-wrapper", "relative w-full h-auto"])}>
                     <video className={clsx(["bg-video", "absolute inset-0 object-cover w-full h-full"])} autoPlay muted loop>
                         <source src="/videos/tech_1.mp4" type="video/mp4" />

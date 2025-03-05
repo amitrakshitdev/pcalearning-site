@@ -66,27 +66,8 @@ export default function CoursesPage() {
     return (
         <section className={clsx(["Courses relative w-full bg-background text-textColor p-4", ["md:px-10 md:py-5", "lg:p-20 lg:py-5"]])}>
             <div className={clsx(["relative max-w-[1000px] mx-auto", "flex flex-col items-start"])}>
-                <h2 className={clsx(["text-5xl text-center font-medium text-primary mb-4 w-full", ["md:text-5xl", "lg:text-7xl"]])}>Courses</h2>
-                <section id="entrace-exam" className={clsx(["w-full"])}>
-                    <h3
-                        className={clsx([
-                            "text-2xl text-textSecondaryColor text-center font-medium mb-3 py-2",
-                            "bg-gradient-to-r from-secondary from-0% via-secondary via-50% to-background to-100%",
-                            "sm:text-2xl",
-                        ])}
-                    >
-                        {EntraceExamData.courseName}
-                    </h3>
-                    {/* <p className={clsx(["text-base mb-4"])}>{MCACouseData.shortDescription}</p> */}
-                    <ul className={clsx(["py-2"])}>
-                        {EntraceExamData.data.map((course, index) => (
-                            <li key={index} className={clsx(["mb-4"])}>
-                                <h4 className={clsx(["text-lg font-semibold"])}>{course.exam}</h4>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-
+                <h2 className={clsx(["text-5xl text-center font-medium text-primary mb-4 w-full", ["md:text-5xl", "lg:text-7xl", "underline"]])}>Courses</h2>
+                
                 <section id="school-computer">
                     <h3
                         className={clsx([
@@ -250,6 +231,26 @@ export default function CoursesPage() {
                                         </li>
                                     ))}
                                 </ol>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                <section id="entrace-exam" className={clsx(["w-full"])}>
+                    <h3
+                        className={clsx([
+                            "text-2xl text-textSecondaryColor text-center font-medium mb-3 py-2",
+                            "bg-gradient-to-r from-secondary from-0% via-secondary via-50% to-background to-100%",
+                            "sm:text-2xl",
+                        ])}
+                    >
+                        {EntraceExamData.courseName}
+                    </h3>
+                    {/* <p className={clsx(["text-base mb-4"])}>{MCACouseData.shortDescription}</p> */}
+                    <ul className={clsx(["py-2"])}>
+                        {EntraceExamData.data.map((course, index) => (
+                            <li key={index} className={clsx(["mb-4"])}>
+                                <h4 className={clsx(["text-lg font-semibold"])}>{course.exam}</h4>
                             </li>
                         ))}
                     </ul>
