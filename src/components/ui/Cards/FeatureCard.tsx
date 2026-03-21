@@ -15,10 +15,10 @@ function FeatureCardWrapper({ children, className }: React.PropsWithChildren<Htm
     );
 }
 
-function FeatureCardIcon({ src, alt, className, ...rest }: { src: string | StaticImageData; alt: string; className?: string; rest?: { width?: number; height?: number } & unknown }) {
+function FeatureCardIcon({ src, alt, className, ...rest }: { src: string | StaticImageData; alt: string; className?: string; [key: string]: any }) {
     return (
         <div>
-            <Image src={src} alt={alt} className={clsx([], className)} width={40} height={40} {...rest} />
+            <Image src={src} alt={alt} className={clsx([], className)} width={40} height={40} unoptimized {...rest} />
         </div>
     );
 }

@@ -1,6 +1,7 @@
 {
     "courseName": "School Computer",
     "shortDescription": "School level Computer Curriculum of  CBSE/ICSE/ISC/WBBSE/WBCHSE from Class VI to Class XII with programming languages like Python, JAVA, C, C++, QBASIC, HTML etc.",
+    "driveLink" : "https://drive.google.com/drive/folders/1URGBh785zxP-tG3PIYk3iM42tOb0xBs4?usp=drive_link",
     "data": [
         {
             "board": "ICSE",

@@ -8,12 +8,14 @@ export default function Navigation() {
 		{ name: "Courses", href: "/courses" },
 		{ name: "Admission", href: "/admission" },
 		{
-			name: "Overview", children: [
-				{ name: "About us", href: "/about-us" },
-				{ name: "Our aim", href: "/our-aim" },
-				{ name: "Our methodology", href: "/our-methodology" },
-				{ name: "Our usp", href: "/our-usp" },
-				{ name: "Rules & Regulations", href: "/rules-and-regulations" },
+			name: "Overview",
+			href: "/overview",
+			children: [
+				// { name: "About us", href: "/about-us" },
+				// { name: "Our aim", href: "/our-aim" },
+				// { name: "Our methodology", href: "/our-methodology" },
+				// { name: "Our usp", href: "/our-usp" },
+				// { name: "Rules & Regulations", href: "/rules-and-regulations" },
 			]
 		},
 		{ name: "Fees", href: "/fees" },
@@ -29,7 +31,8 @@ export default function Navigation() {
 			<NavigationMenu.List className={clsx(["flex items-center justify-around"])}>
 				{menuItems.map((item, index) => (
 					<NavigationMenu.Item key={index}>
-						{!item.children ? <NavigationMenu.Trigger className={clsx([
+						{!item.children || item?.children.length == 0 ? 
+						<NavigationMenu.Trigger className={clsx([
 							"py-2 px-4",
 							"min-w-20 w-auto",
 							"border-transparent border-b-2 hover:border-primary"

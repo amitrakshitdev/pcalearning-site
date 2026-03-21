@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import clsx from "clsx";
 import CourseCards from "./CourseCards";
 import { ButtonLink } from "../ui/Buttons/Buttons";
@@ -66,7 +67,7 @@ export default function Courses() {
                     >
                         {courses.map((course, index) => {
                             return (
-                                <>
+                      
                                     <CourseCards.CourseCardWrapper
                                         key={index}
                                         className={clsx(["relative py-4 px-4 min-h-48", "self-center justify-self-center", "w-full"])}
@@ -81,7 +82,7 @@ export default function Courses() {
                                             </ButtonLink>
                                         </CourseCards.CourseDetails>
                                     </CourseCards.CourseCardWrapper>
-                                </>
+                                
                             );
                         })}
                     </div>
