@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import clsx from "clsx";
 import CourseCards from "./CourseCards";
 import { ButtonLink } from "../ui/Buttons/Buttons";
@@ -50,11 +49,46 @@ const courses = [
 
 export default function Courses() {
     return (
-        <section className={clsx(["Courses bg-customGreyColor p-4 w-full", "sm:p-0"])}>
-            <div className={clsx(["relative bg-background px-0 pt-4 flex flex-col items-center", "rounded-md shadow-md overflow-hidden", "sm:rounded-none"])}>
-                <h1 className={clsx(["text-5xl text-primary text-center font-bold underline", "mb-6", "md:mt-8 md:mb-10"], ["lg:text-7xl"])}>Our Courses</h1>
-                <div className={clsx(["video-bg-wrapper", "relative w-full h-auto"])}>
-                    <video className={clsx(["bg-video", "absolute inset-0 object-cover w-full h-full"])} autoPlay muted loop>
+        <section
+            className={clsx([
+                "Courses bg-customGreyColor p-4 w-full",
+                "sm:p-0",
+            ])}
+        >
+            <div
+                className={clsx([
+                    "relative bg-background px-0 pt-4 flex flex-col items-center",
+                    "rounded-md shadow-md overflow-hidden",
+                    "sm:rounded-none",
+                ])}
+            >
+                <h1
+                    className={clsx(
+                        [
+                            "text-5xl text-primary text-center font-bold underline",
+                            "mb-6",
+                            "md:mt-8 md:mb-10",
+                        ],
+                        ["lg:text-7xl"],
+                    )}
+                >
+                    Our Courses
+                </h1>
+                <div
+                    className={clsx([
+                        "video-bg-wrapper",
+                        "relative w-full h-auto",
+                    ])}
+                >
+                    <video
+                        className={clsx([
+                            "bg-video",
+                            "absolute inset-0 object-cover w-full h-full",
+                        ])}
+                        autoPlay
+                        muted
+                        loop
+                    >
                         <source src="/videos/tech_1.mp4" type="video/mp4" />
                     </video>
                     <div
@@ -67,22 +101,57 @@ export default function Courses() {
                     >
                         {courses.map((course, index) => {
                             return (
-                      
-                                    <CourseCards.CourseCardWrapper
-                                        key={index}
-                                        className={clsx(["relative py-4 px-4 min-h-48", "self-center justify-self-center", "w-full"])}
-                                        index={index + 1}
+                                <CourseCards.CourseCardWrapper
+                                    key={index}
+                                    className={clsx([
+                                        "relative py-4 px-4 min-h-48",
+                                        "self-center justify-self-center",
+                                        "w-full",
+                                    ])}
+                                    index={index + 1}
+                                >
+                                    <CourseCards.CourseDetails
+                                        className={clsx([
+                                            "text-center h-full flex-1 flex flex-col justify-between",
+                                        ])}
                                     >
-                                        <CourseCards.CourseDetails className={clsx(["text-center h-full flex-1 flex flex-col justify-between"])}>
-                                            <h2 className={clsx(["text-2xl font-bold", "my-2"])}>{course.name ?? ""}</h2>
-                                            <p className={clsx(["text-base", "mb-1"])}>{course.class ?? ""}</p>
-                                            <p className={clsx(["text-sm font-light", "mb-2"])}>{course.boards.length ? course.boards.join("/") : ""}</p>
-                                            <ButtonLink href={course.href} buttonType="primary-rounded" className={clsx(["py-1 px-4 text-center w-auto self-center"])}>
-                                                More info
-                                            </ButtonLink>
-                                        </CourseCards.CourseDetails>
-                                    </CourseCards.CourseCardWrapper>
-                                
+                                        <h2
+                                            className={clsx([
+                                                "text-2xl font-bold",
+                                                "my-2",
+                                            ])}
+                                        >
+                                            {course.name ?? ""}
+                                        </h2>
+                                        <p
+                                            className={clsx([
+                                                "text-base",
+                                                "mb-1",
+                                            ])}
+                                        >
+                                            {course.class ?? ""}
+                                        </p>
+                                        <p
+                                            className={clsx([
+                                                "text-sm font-light",
+                                                "mb-2",
+                                            ])}
+                                        >
+                                            {course.boards.length
+                                                ? course.boards.join("/")
+                                                : ""}
+                                        </p>
+                                        <ButtonLink
+                                            href={course.href}
+                                            buttonType="primary-rounded"
+                                            className={clsx([
+                                                "py-1 px-4 text-center w-auto self-center",
+                                            ])}
+                                        >
+                                            More info
+                                        </ButtonLink>
+                                    </CourseCards.CourseDetails>
+                                </CourseCards.CourseCardWrapper>
                             );
                         })}
                     </div>
