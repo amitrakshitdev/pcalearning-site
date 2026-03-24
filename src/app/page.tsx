@@ -4,6 +4,8 @@ import Footer from "@/components/Footer/Footer";
 import OurStory from "@/components/OurStory/OurStory";
 import Marquee from "@/components/ui/Marquee/Marquee";
 import WhyPCALearning from "@/components/WhyPCALearning/WhyPCALearning";
+import FounderAndTrainer from "@/components/FounderAndTrainer/FounderAndTrainer";
+import Gallery from "@/components/Gallery/Gallery";
 import clsx from "clsx";
 
 const marqueeText =
@@ -29,6 +31,8 @@ export default function Home() {
             <OurStory />
             <Courses />
             <WhyPCALearning />
+            <FounderAndTrainer />
+            <Gallery />
             <Footer />
         </>
     );
