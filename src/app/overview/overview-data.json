@@ -1,0 +1,82 @@
+{
+  "title": "Why Students Choose",
+  "subtitle": "Pakrashi Computer Academy",
+  "description": "Choosing the right guidance is important for success in academics and career. Pakrashi Computer Academy has become a trusted learning center for many students because of its commitment to quality education and personalized support.",
+  "features": [
+    {
+      "id": 1,
+      "title": "Experienced and Qualified Faculty",
+      "description": "Classes are conducted by a highly qualified instructor with M.Tech in Computer Science & Engineering, ensuring strong conceptual understanding for students."
+    },
+    {
+      "id": 2,
+      "title": "Special Focus on University & Competitive Exams",
+      "description": "Guidance is provided for students of:",
+      "points": [
+        "BCA",
+        "B.Sc Computer Science",
+        "B.Tech",
+        "MCA",
+        "M.Sc Computer Science",
+        "Diploma in Computer Science",
+        "JECA & GATE preparation"
+      ],
+      "conclusion": "Students receive exam-oriented teaching and problem solving practice."
+    },
+    {
+      "id": 3,
+      "title": "Small Batch Size",
+      "description": "Limited students per batch to ensure:",
+      "points": [
+        "Personal attention",
+        "Individual doubt clearing",
+        "Better interaction with the teacher"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Concept Based Teaching",
+      "description": "Instead of rote learning, focus is on:",
+      "points": [
+        "Understanding core concepts",
+        "Practical problem solving",
+        "Real academic examples"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Regular Practice & Assignments",
+      "description": "Students receive:",
+      "points": [
+        "Practice problems",
+        "Model questions",
+        "Previous university question discussions"
+      ],
+      "conclusion": "This helps them perform better in semester exams."
+    },
+    {
+      "id": 6,
+      "title": "Friendly Learning Environment",
+      "description": "Students feel comfortable asking doubts and discussing academic problems, making learning more effective."
+    },
+    {
+      "id": 7,
+      "title": "Affordable Fees",
+      "description": "Quality education is provided at reasonable and student-friendly fees, making it accessible for more students."
+    },
+    {
+      "id": 8,
+      "title": "Academic Guidance & Career Support",
+      "description": "Students also receive guidance regarding:",
+      "points": [
+        "Higher studies",
+        "Project work",
+        "Career opportunities in Computer Science"
+      ]
+    }
+  ],
+  "mission": {
+    "title": "Our Mission",
+    "description": "To build strong technical foundations in Computer Science and help students achieve academic success with confidence."
+  }
+}
