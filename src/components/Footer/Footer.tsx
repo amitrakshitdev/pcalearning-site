@@ -6,8 +6,6 @@ import {
     FaMobileScreen,
     FaRegEnvelope,
     FaWhatsapp,
-    FaXTwitter,
-    FaYoutube,
 } from "react-icons/fa6";
 
 const Footer = () => {
