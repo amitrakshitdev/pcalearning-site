@@ -21,11 +21,10 @@ export default function FounderAndTrainer() {
                         Founder & Trainer
                     </h2>
                     <p className="text-gray-800 leading-relaxed font-medium">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat. Ut wisi enim ad
-                        minim veniam, quis nostrud exerci tation ullamcorper
-                        suscipit lobor
+                        Sourav Pakrashi is the Founder and Trainer of Pakrashi
+                        Computer Academy, holding an M.Tech in Computer Science
+                        and Engineering from MAKAUT and a B.Ed degree, committed
+                        to delivering practical and quality computer education.
                     </p>
                 </div>
 
