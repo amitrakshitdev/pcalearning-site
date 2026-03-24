@@ -76,7 +76,10 @@ const Footer = () => {
                     <Link href="/notices" className="hover:underline uppercase">
                         Notices
                     </Link>
-                    <Link href="/contact" className="hover:underline uppercase">
+                    <Link
+                        href="/contact-us"
+                        className="hover:underline uppercase"
+                    >
                         Contact Us
                     </Link>
                 </div>
