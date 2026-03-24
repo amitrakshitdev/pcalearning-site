@@ -59,16 +59,13 @@ export default function OurStory() {
                         interested in learning coding, we have a course for you.
                     </p>
                     <div className={clsx(["flex my-3 w-24 justify-between"])}>
-                        <Link href="/about">
+                        <Link href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr">
                             <FaSquareFacebook size={20} />
                         </Link>
-                        <Link href="/about">
-                            <FaSquareXTwitter size={20} />
-                        </Link>
-                        <Link href="/about">
+                        <Link href="/about-us">
                             <FaLinkedin size={20} />
                         </Link>
-                        <Link href="/about">
+                        <Link href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr">
                             <FaInstagram size={20} />
                         </Link>
                     </div>

@@ -17,6 +17,7 @@ import BtechCourseData from "./jsons/btech-courses-data.json";
 import BscCourseData from "./jsons/bsc-courses-data.json";
 import PolytechnicCourseData from "./jsons/polytechnic-courses-data.json";
 import EntraceExamData from "./jsons/entrance-exam-data.json";
+import Footer from "@/components/Footer/Footer";
 export const metadata: Metadata = {
     title: "Courses",
     description:
@@ -203,57 +204,63 @@ const CourseSection = ({
 
 export default function CoursesPage() {
     return (
-        <section
-            className={clsx([
-                "Courses relative w-full bg-background text-textColor min-h-screen",
-                ["px-4 py-16 md:px-12 md:py-20", "lg:px-24 lg:py-28"],
-            ])}
-        >
-            {/* Background design elements */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-                <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-primary/5 to-transparent"></div>
-                <div className="absolute top-40 right-10 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px]"></div>
-                <div className="absolute bottom-40 left-10 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[120px]"></div>
-            </div>
-
-            <div
+        <>
+            <section
                 className={clsx([
-                    "relative z-10 max-w-[1400px] mx-auto",
-                    "flex flex-col items-center md:items-start",
+                    "Courses relative w-full bg-background text-textColor min-h-screen",
+                    ["px-4 py-16 md:px-12 md:py-20", "lg:px-24 lg:py-28"],
                 ])}
             >
-                <div className="w-full text-center md:text-left mb-20">
-                    <h2
-                        className={clsx([
-                            "text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-primary mb-6",
-                            "tracking-tight drop-shadow-sm leading-tight inline-block",
-                        ])}
-                    >
-                        Our Courses
-                    </h2>
-                    <p className="max-w-3xl text-xl md:text-2xl opacity-80 leading-relaxed mx-auto md:mx-0 font-medium">
-                        Discover your potential with our expertly crafted
-                        curriculum. From school level to advanced engineering
-                        courses.
-                    </p>
+                {/* Background design elements */}
+                <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+                    <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-primary/5 to-transparent"></div>
+                    <div className="absolute top-40 right-10 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px]"></div>
+                    <div className="absolute bottom-40 left-10 w-[700px] h-[700px] bg-primary/10 rounded-full blur-[120px]"></div>
                 </div>
 
-                <div className="w-full flex flex-col gap-6">
-                    <CourseSection
-                        id="school-computer"
-                        data={SchoolComputerData}
-                    />
-                    <CourseSection
-                        id="polytechnic"
-                        data={PolytechnicCourseData}
-                    />
-                    <CourseSection id="btech" data={BtechCourseData} />
-                    <CourseSection id="bca" data={BCACouseData} />
-                    <CourseSection id="bsc" data={BscCourseData} />
-                    <CourseSection id="mca" data={MCACouseData} />
-                    <CourseSection id="entrace-exam" data={EntraceExamData} />
+                <div
+                    className={clsx([
+                        "relative z-10 max-w-[1400px] mx-auto",
+                        "flex flex-col items-center md:items-start",
+                    ])}
+                >
+                    <div className="w-full text-center md:text-left mb-20">
+                        <h2
+                            className={clsx([
+                                "text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-primary mb-6",
+                                "tracking-tight drop-shadow-sm leading-tight inline-block",
+                            ])}
+                        >
+                            Our Courses
+                        </h2>
+                        <p className="max-w-3xl text-xl md:text-2xl opacity-80 leading-relaxed mx-auto md:mx-0 font-medium">
+                            Discover your potential with our expertly crafted
+                            curriculum. From school level to advanced
+                            engineering courses.
+                        </p>
+                    </div>
+
+                    <div className="w-full flex flex-col gap-6">
+                        <CourseSection
+                            id="school-computer"
+                            data={SchoolComputerData}
+                        />
+                        <CourseSection
+                            id="polytechnic"
+                            data={PolytechnicCourseData}
+                        />
+                        <CourseSection id="btech" data={BtechCourseData} />
+                        <CourseSection id="bca" data={BCACouseData} />
+                        <CourseSection id="bsc" data={BscCourseData} />
+                        <CourseSection id="mca" data={MCACouseData} />
+                        <CourseSection
+                            id="entrace-exam"
+                            data={EntraceExamData}
+                        />
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <Footer />
+        </>
     );
 }
