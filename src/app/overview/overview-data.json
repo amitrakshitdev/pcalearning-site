@@ -75,8 +75,86 @@
       ]
     }
   ],
+  "aim": {
+    "title": "Our Aim",
+    "description": "The primary aim of Pakrashi Computer Academy is to empower students with practical, industry-relevant computer education that builds confidence, enhances employability, and prepares them for real-world challenges. We strive to bridge the gap between academic knowledge and professional skills by providing quality training in various domains of computer science and information technology."
+  },
+  "core-objectives": {
+    "title": "Our Core Objectives",
+    "objectives": [
+      {
+        "title": "Skill-Based Learning",
+        "description": "To provide hands-on training in essential computer applications such as MS Office, programming, data analysis, and modern tools so that students gain practical expertise, not just theoretical knowledge."
+      },
+      {
+        "title": "Career-Oriented Education",
+        "description": "To guide students from school, college, and technical backgrounds (BCA, B.Tech, Diploma, MCA, etc.) towards building strong careers in IT and related fields."
+      },
+      {
+        "title": "Strong Conceptual Foundation",
+        "description": "To ensure students understand the fundamentals clearly, helping them excel in academics, competitive exams, and professional environments."
+      },
+      {
+        "title": "Affordable & Accessible Education",
+        "description": "To make quality computer education available to all students at an affordable cost, especially in local and semi-urban areas."
+      },
+      {
+        "title": "Confidence & Personality Development",
+        "description": "To develop communication skills, problem-solving ability, and confidence among students, preparing them for interviews and workplace challenges."
+      },
+      {
+        "title": "Technology Awareness & Innovation",
+        "description": "To keep students updated with the latest technologies and encourage innovative thinking and project-based learning."
+      }
+    ]
+  },
   "mission": {
     "title": "Our Mission",
     "description": "To build strong technical foundations in Computer Science and help students achieve academic success with confidence."
+  },
+  "vision" : {
+    "title": "Our Vision",
+    "description": "To become a trusted center of excellence in computer education where students not only learn but grow into skilled professionals ready to succeed in the digital world."
+  },
+  "rules-and-regulations": {
+    "title": "Rules & Regulations",
+    "rules": [
+      {
+        "id": 1,
+        "description": "Parents are requested to refrain from waiting in the classroom while the classes are going on. You are requested to come on time to pick up your child."
+      },
+      {
+        "id": 2,
+        "description": "Students must behave well in class. Parents will be responsible for any damage to property and injury to others caused by their children."
+      },
+      {
+        "id": 3,
+        "description": "Student must be on time for class. In case the student is late by 15 minutes he/she will not be allowed in the class."
+      },
+      {
+        "id": 4,
+        "description": "Students who wish to go on leave must submit an advance leave application to avail the compensatory classes. Compensatory classes will be held only when there is a genuine reason for taking leave and will be at the sole discretion of academy in charge."
+      },
+      {
+        "id": 5,
+        "description": "All fees are non refundable & non transferable. No refund of fees will be given if a student discontinues in between."
+      },
+      {
+        "id": 6,
+        "description": "Academy in charge reserves all rights to cancel reschedule / merge any student(s)/batch from one class/batch to another."
+      },
+      {
+        "id": 7,
+        "description": "School students (Class V to Class XII) are not allowed to use mobile phone in the classroom."
+      },
+      {
+        "id": 8,
+        "description": "A student who stops attending classes without informing in writing for more than 4 classes will be treated as discontinued / dropout. If such student wishes to rejoin, he /she will have to pay the full registration fees."
+      },
+      {
+        "id": 9,
+        "description": "Pakrashi Computer Academy reserves the right to make changes in the institute rules, which will be communicated to students and parents and shall be binding to all."
+      }
+    ]
   }
 }

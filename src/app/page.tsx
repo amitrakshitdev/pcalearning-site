@@ -9,7 +9,7 @@ import Gallery from "@/components/Gallery/Gallery";
 import clsx from "clsx";
 
 const marqueeText =
-    "Even semester batches 2025 (B.Tech/BCA/MCA) going to be started from first week of February 2025.";
+    "Even semester batches for 2026 (B.Tech/BCA/MCA) going to be started from first week of May 2026.";
 
 export default function Home() {
     return (

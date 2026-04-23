@@ -20,7 +20,11 @@ export default function FounderAndTrainer() {
                     <h2 className="text-3xl font-bold text-primary mb-4 underline decoration-blue-300 decoration-4 underline-offset-8">
                         Founder & Trainer
                     </h2>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-2">
+                        Mr. Sourav Pakrashi (M.Tech in Computer Science & Engineering, B.Ed)
+                    </h4>
                     <p className="text-gray-800 leading-relaxed font-medium">
+                        <span>Mr. Sourav Pakrashi (M.Tech in Computer Science & Engineering, B.Ed)</span>
                         Sourav Pakrashi is the Founder and Trainer of Pakrashi
                         Computer Academy, holding an M.Tech in Computer Science
                         and Engineering from MAKAUT and a B.Ed degree, committed

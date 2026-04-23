@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { SyntheticEvent, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import { menuItems } from "./menuContent";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,23 +24,6 @@ export default function MobileMenu() {
       setIsOpen(true);
     }
   };
-
-  const menuItems = [
-    { name: "Home", href: "/" },
-    { name: "Courses", href: "/courses" },
-    { name: "Admission", href: "/admission" },
-    {
-      name: "Overview", children: [
-        { name: "About us", href: "/about-us" },
-        { name: "Our aim", href: "/our-aim" },
-        { name: "Our methodology", href: "/our-methodology" },
-        { name: "Our usp", href: "/our-usp" },
-        { name: "Rules & Regulations", href: "/rules-and-regulations" },
-      ]
-    },
-    { name: "Fees", href: "/fees" },
-    { name: "Contact us", href: "/contact-us" }
-  ];
 
   // Animation Variants
   const overlayVariants = {
@@ -109,7 +93,7 @@ export default function MobileMenu() {
                   {menuItems.map((item, index) => (
                     <NavigationMenu.Item key={index}>
                       {!item.children ?
-                        <Link href={item?.href || "/"}>
+                        <Link href={item?.href || "/"} onClick={() => setIsOpen(false)}>
                           <NavigationMenu.Trigger className={clsx([
                             "py-3 px-4 uppercase",
                             "w-full text-left"
@@ -133,7 +117,7 @@ export default function MobileMenu() {
                             <NavigationMenu.Sub orientation="vertical" className={clsx(["bg-blue-50"])}>
                               {item.children.map((subItem, index) => (
                                 <NavigationMenu.Item key={index}>
-                                  <Link href={subItem.href}>
+                                  <Link href={subItem.href} onClick={() => setIsOpen(false)}>
                                     <NavigationMenu.Trigger className="py-3 px-7 uppercase w-full text-left">
                                       {subItem.name}
                                     </NavigationMenu.Trigger>

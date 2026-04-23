@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Monthly fee structure for Pakrashi Computer Academy.",
 };
 
-const feeData = [
+const schoolFeeData = [
     { class: "Class 5 – 6", board: "ICSE / CBSE / State Board", fee: "₹ 400" },
     { class: "Class 7 – 8", board: "ICSE / CBSE", fee: "₹ 450" },
     { class: "Class 7 – 8", board: "State Board", fee: "₹ 400" },
@@ -14,6 +14,14 @@ const feeData = [
     { class: "Class 9 – 10", board: "State Board", fee: "₹ 450" },
     { class: "Class 11 – 12", board: "ICSE / CBSE", fee: "₹ 600" },
     { class: "Class 11 – 12", board: "State Board", fee: "₹ 500" },
+];
+
+const collegeFeeData = [
+    { class: "BCA / B.Sc. in Computer Science / B.Tech (Semester Papers)", mode: "Offline", fee: "₹ 800" },
+    { class: "Diploma in Computer Science / IT", mode: "Offline", fee: "₹ 700" },
+    { class: "MCA / M.Sc. in Computer Science", mode: "Offline", fee: "₹ 1000" },
+    { class: "M.Tech (Computer Science / IT)", mode: "Offline", fee: "₹ 1200" },
+    { class: "JECA & GATE Examination Preparation", mode: "Online / Offline", fee: "₹ 1500" },
 ];
 
 export default function FeesPage() {
@@ -34,44 +42,91 @@ export default function FeesPage() {
                         </h3>
                     </div>
 
-                    {/* Table Container */}
-                    <div className="rounded-xl shadow-lg border-2 border-primary overflow-hidden">
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-left border-collapse">
-                                <thead>
-                                    <tr className="bg-primary text-textSecondaryColor">
-                                        <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
-                                            Class Standard
-                                        </th>
-                                        <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
-                                            Board
-                                        </th>
-                                        <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
-                                            Monthly Fees (INR)
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {feeData.map((row, idx) => (
-                                        <tr
-                                            key={idx}
-                                            className={`border-b border-primary/20 hover:bg-primary-50 transition-colors ${
-                                                idx % 2 === 0 ? "bg-background" : "bg-customGreyColor"
-                                            }`}
-                                        >
-                                            <td className="py-4 px-6 text-textColor font-medium whitespace-nowrap">
-                                                {row.class}
-                                            </td>
-                                            <td className="py-4 px-6 text-textColor opacity-90">
-                                                {row.board}
-                                            </td>
-                                            <td className="py-4 px-6 font-bold text-primary whitespace-nowrap">
-                                                {row.fee}
-                                            </td>
+                    {/* School Fees Table Container */}
+                    <div>
+                        <h2 className="text-xl md:text-2xl font-bold text-primary mb-2">For School Students</h2>
+                        <div className="rounded-xl shadow-lg border-2 border-primary overflow-hidden">
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-left border-collapse">
+                                    <thead>
+                                        <tr className="bg-primary text-textSecondaryColor">
+                                            <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
+                                                Class Standard
+                                            </th>
+                                            <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
+                                                Board
+                                            </th>
+                                            <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
+                                                Monthly Fees (INR)
+                                            </th>
                                         </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                        {schoolFeeData.map((row, idx) => (
+                                            <tr
+                                                key={idx}
+                                                className={`border-b border-primary/20 hover:bg-primary-50 transition-colors ${
+                                                    idx % 2 === 0 ? "bg-background" : "bg-customGreyColor"
+                                                }`}
+                                            >
+                                                <td className="py-4 px-6 text-textColor font-medium whitespace-nowrap">
+                                                    {row.class}
+                                                </td>
+                                                <td className="py-4 px-6 text-textColor opacity-90">
+                                                    {row.board}
+                                                </td>
+                                                <td className="py-4 px-6 font-bold text-primary whitespace-nowrap">
+                                                    {row.fee}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* College Fees Table Container */}
+                    <div>
+                        <h2 className="text-xl md:text-2xl font-bold text-primary mb-2">For College Students</h2>
+                        <div className="rounded-xl shadow-lg border-2 border-primary overflow-hidden">
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-left border-collapse">
+                                    <thead>
+                                        <tr className="bg-primary text-textSecondaryColor">
+                                            <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
+                                                Course / Category
+                                            </th>
+                                            <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
+                                                Mode of Study
+                                            </th>
+                                            <th className="py-5 px-6 font-bold text-lg border-b-2 border-primary-50 whitespace-nowrap">
+                                                Monthly Fees / Paper
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {collegeFeeData.map((row, idx) => (
+                                            <tr
+                                                key={idx}
+                                                className={`border-b border-primary/20 hover:bg-primary-50 transition-colors ${
+                                                    idx % 2 === 0 ? "bg-background" : "bg-customGreyColor"
+                                                }`}
+                                            >
+                                                <td className="py-4 px-6 text-textColor font-medium whitespace-nowrap">
+                                                    {row.class}
+                                                </td>
+                                                <td className="py-4 px-6 text-textColor opacity-90">
+                                                    {row.mode}
+                                                </td>
+                                                <td className="py-4 px-6 font-bold text-primary whitespace-nowrap">
+                                                    {row.fee}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 

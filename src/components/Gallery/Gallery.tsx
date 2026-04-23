@@ -1,6 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "../Gallery/override-style.css";
 import "swiper/css";
@@ -30,11 +30,14 @@ export default function Gallery() {
 
                 <div className="max-w-5xl mx-auto relative">
                     <Swiper
-                        modules={[Navigation, Pagination]}
+                        modules={[Navigation, Pagination, Autoplay]}
                         pagination={{ enabled: true, clickable: true }}
                         navigation={{ enabled: true }}
                         loop={true}
-                        autoplay={true}
+                        autoplay={{
+                            delay: 5000,
+                        }}
+                        speed={1000}
                         spaceBetween={20}
                         slidesPerView={1}
                         className="w-full rounded-md shadow-2xl border-4 border-primary overflow-hidden bg-white"
@@ -46,7 +49,9 @@ export default function Gallery() {
                         }
                     >
                         {galleryImages.map((src, idx) => (
-                            <SwiperSlide key={idx}>
+                            <SwiperSlide key={idx}
+                                
+                            >
                                 <div className="relative w-full aspect-[16/9] flex justify-center items-center bg-gray-100">
                                     <Image
                                         src={src}

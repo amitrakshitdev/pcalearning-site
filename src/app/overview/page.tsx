@@ -75,6 +75,51 @@ export default function OverviewPage() {
                         ))}
                     </div>
 
+                    {/* Aim Section */}
+                    <section className="bg-primary text-textSecondaryColor p-8 sm:p-12 rounded-2xl shadow-lg relative overflow-hidden mt-12 text-center flex justify-center">
+                        {/* <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full blur-3xl opacity-20 -ml-20 -mb-20"></div> */}
+
+                        <div className="relative z-10 mx-4">
+                            <h3 className="text-3xl font-bold mb-6 text-textSecondaryColor">
+                                {overviewData.aim.title}
+                            </h3>
+                            <p className="text-textSecondaryColor text-lg leading-relaxed opacity-[0.95]">
+                                {overviewData.aim.description}
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* Core Objectives Section */}
+                    <section className="mt-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-8 underline decoration-primary-50 decoration-[4px] underline-offset-[8px]">
+                            {overviewData["core-objectives"].title}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {overviewData["core-objectives"].objectives.map((objective, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-primary-50 p-6 rounded-xl shadow-lg border-t-4 border-[1px] border-primary transition-shadow"
+                                >
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                                            <span className="text-textSecondaryColor font-bold text-sm">
+                                                {index + 1}
+                                            </span>
+                                        </div>
+                                        <h3 className="text-lg md:text-xl font-bold text-primary">
+                                            {objective.title}
+                                        </h3>
+                                    </div>
+                                    <p className="text-textColor leading-relaxed opacity-90">
+                                        {objective.description}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+
                     {/* Mission Section */}
                     <section className="bg-primary text-textSecondaryColor p-8 sm:p-12 rounded-2xl shadow-lg relative overflow-hidden mt-12 text-center">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
@@ -87,6 +132,44 @@ export default function OverviewPage() {
                             <p className="text-textSecondaryColor text-lg leading-relaxed opacity-[0.95]">
                                 {overviewData.mission.description}
                             </p>
+                        </div>
+                    </section>
+
+                    {/* Vision Section */}
+                    <section className="bg-primary text-textSecondaryColor p-8 sm:p-12 rounded-2xl shadow-lg relative overflow-hidden mt-12 text-center">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full blur-3xl opacity-20 -ml-20 -mb-20"></div>
+
+                        <div className="relative z-10 max-w-2xl mx-auto">
+                            <h3 className="text-3xl font-bold mb-6 text-textSecondaryColor">
+                                {overviewData.vision.title}
+                            </h3>
+                            <p className="text-textSecondaryColor text-lg leading-relaxed opacity-[0.95]">
+                                {overviewData.vision.description}
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* Rules and Regulations Section */}
+                    <section className="mt-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-8 underline decoration-primary-50 decoration-[4px] underline-offset-[8px]">
+                            {overviewData["rules-and-regulations"].title}
+                        </h2>
+                        <div className="bg-primary-50 p-8 rounded-xl shadow-lg border-t-4 border-[1px] border-primary">
+                            <ul className="space-y-4">
+                                {overviewData["rules-and-regulations"].rules.map((rule) => (
+                                    <li key={rule.id} className="flex gap-4 items-start">
+                                        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 mt-1">
+                                            <span className="text-textSecondaryColor font-bold text-sm">
+                                                {rule.id}
+                                            </span>
+                                        </div>
+                                        <p className="text-textColor leading-relaxed opacity-90 pt-0.5">
+                                            {rule.description}
+                                        </p>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </section>
                 </div>
