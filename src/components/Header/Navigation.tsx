@@ -1,32 +1,9 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import clsx from "clsx";
 import Link from "next/link";
-
-type MenuItem = {
-    name: string;
-    href: string;
-    children?: MenuItem[];
-};
+import { menuItems, MenuItem } from "./menuContent";
 
 export default function Navigation() {
-    const menuItems: MenuItem[] = [
-        { name: "Home", href: "/" },
-        { name: "Courses", href: "/courses" },
-        { name: "Admission", href: "/admission" },
-        {
-            name: "Overview",
-            href: "/overview",
-            children: [
-                // { name: "About us", href: "/about-us" },
-                // { name: "Our aim", href: "/our-aim" },
-                // { name: "Our methodology", href: "/our-methodology" },
-                // { name: "Our usp", href: "/our-usp" },
-                // { name: "Rules & Regulations", href: "/rules-and-regulations" },
-            ],
-        },
-        { name: "Fees", href: "/fees" },
-        { name: "Contact us", href: "/contact-us" },
-    ];
     return (
         <NavigationMenu.Root
             orientation="horizontal"

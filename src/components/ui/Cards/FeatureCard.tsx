@@ -86,6 +86,7 @@ function FeatureCardDescription({
                     "my-2",
                     "text-textColor text-sm text-center font-light",
                     "sm:text-base",
+                    "whitespace-pre-line",
                 ],
                 className,
             )}

@@ -3,28 +3,28 @@ import FeatureCard from "../ui/Cards/FeatureCard";
 
 const contents = [
 	{
-		title: "Learn from the best",
-		description: "Our courses are designed by industry experts who have years of experience in the field.",
+		title: "Experienced and Qualified Faculty",
+		description: "Classes are conducted by a highly qualified instructor with M.Tech in Computer Science & Engineering, ensuring strong conceptual understanding for students.",
 		icon: "/icons/learn-from-best.png",
 	},
 	{
-		title: "Practical learning",
-		description: "We believe in learning by doing. Our courses are designed to give you hands-on experience.",
+		title: "Regular Practice & Assignments",
+		description: "Students receive: \n1. Practice problems \n2. Model questions \n3. Previous university question discussions. This helps them perform better in semester exams.",
 		icon: "/icons/practical-learning.png",
 	},
 	{
-		title: "Flexible timings",
-		description: "We understand that you have a busy schedule. Our courses are designed to fit your needs.",
+		title: "Friendly Learning Environment",
+		description: "Students feel comfortable asking doubts and discussing academic problems, making learning more effective.",
 		icon: "/icons/flexible-timing.png",
 	},
 	{
-		title: "Affordable pricing",
-		description: "We believe that quality education should be accessible to everyone. Our courses are priced competitively.",
+		title: "Affordable Fees",
+		description: "Quality education is provided at reasonable and student-friendly fees, making it accessible for more students.",
 		icon: "/icons/affordable-pricing.png",
 	},
 	{
-		title: "Community support",
-		description: "Join a community of learners and get support from peers and mentors.",
+		title: "Academic Guidance & Career Support",
+		description: "Students also receive guidance regarding:\n 1. Higher studies\n2. Project work\n3. Career opportunities in Computer Science",
 		icon: "/icons/community-support.png",
 	},
 	{

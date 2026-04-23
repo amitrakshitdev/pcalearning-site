@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import Header from "@/components/Header/Header";
+import ScrollTopButton from "@/components/ScrollTopButton/ScrollTopButton";
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Lato } from "next/font/google";
@@ -75,6 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body className={clsx(["flex flex-col h-dvh", "bg-background"])}>
                 <Header />
                 <div className={clsx(["relative flex-1 overflow-y-auto"])}>{children}</div>
+                <ScrollTopButton />
                 {/* Footer */}
             </body>
         </html>

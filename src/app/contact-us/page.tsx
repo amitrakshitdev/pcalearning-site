@@ -7,6 +7,7 @@ import {
     FaWhatsapp,
 } from "react-icons/fa6";
 import { Metadata } from "next";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
     title: "Contact us",
@@ -137,6 +138,7 @@ export default function ContactUs() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
