@@ -265,7 +265,7 @@ export default function Admissions() {
 
                     {/* Footer Signature */}
                     <div className="pt-8 pb-4 text-center">
-                        <p className="text-2xl font-medium text-primary italic drop-shadow-sm">
+                        <p className="text-2xl text-primary font-bold drop-shadow-sm">
                             Pakrashi Computer Academy
                         </p>
                         <p className="text-lg text-textColor opacity-80 mt-2">

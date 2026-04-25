@@ -2,11 +2,13 @@ import Link from "next/link";
 import {
     FaFacebookF,
     FaInstagram,
+    FaLinkedin,
     FaLocationDot,
     FaMobileScreen,
     FaRegEnvelope,
     FaWhatsapp,
 } from "react-icons/fa6";
+import { siteConfig } from "@/config/site";
 
 const Footer = () => {
     return (
@@ -25,23 +27,26 @@ const Footer = () => {
 
                     <div className="flex gap-3 mt-4">
                         <Link
-                            href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr"
+                            href={siteConfig.socialLinks.facebook}
+                            target="_blank"
                             className="bg-white text-primary p-2 rounded-full hover:bg-gray-200 transition-colors"
                         >
                             <FaFacebookF size={18} />
                         </Link>
                         <Link
-                            href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr"
+                            href={siteConfig.socialLinks.instagram}
+                            target="_blank"
                             className="bg-white text-primary p-2 rounded-full hover:bg-gray-200 transition-colors"
                         >
                             <FaInstagram size={18} />
                         </Link>
-                        {/* <Link
-                            href="#"
+                        <Link
+                            href={siteConfig.socialLinks.linkedin}
+                            target="_blank"
                             className="bg-white text-primary p-2 rounded-full hover:bg-gray-200 transition-colors"
                         >
-                            <FaXTwitter size={18} />
-                        </Link> */}
+                            <FaLinkedin size={18} />
+                        </Link>
                         {/* <Link
                             href="#"
                             className="bg-white text-primary p-2 rounded-full hover:bg-gray-200 transition-colors"
@@ -49,7 +54,8 @@ const Footer = () => {
                             <FaYoutube size={18} />
                         </Link> */}
                         <Link
-                            href="https://wa.me/message/4JR72ISSSSKUK1"
+                            href={siteConfig.socialLinks.whatsapp}
+                            target="_blank"
                             className="bg-white text-primary p-2 rounded-full hover:bg-gray-200 transition-colors"
                         >
                             <FaWhatsapp size={18} />
@@ -89,27 +95,27 @@ const Footer = () => {
                     </h3>
                     <div className="flex gap-3">
                         <FaLocationDot size={20} className="shrink-0 mt-0.5" />
-                        <p className="leading-relaxed">
-                            3, VIVEKANANDA ROAD
+                        <p className="leading-relaxed uppercase">
+                            {siteConfig.contact.addressLine1}
                             <br />
-                            P.O. NABAGRAM,KONNAGAR,HOOGHLY
+                            {siteConfig.contact.addressLine2}
                             <br />
-                            WEST BENGAL, PIN:712246
+                            {siteConfig.contact.addressLine3}
                         </p>
                     </div>
                     <div className="flex gap-3 items-center">
                         <FaRegEnvelope size={20} className="shrink-0" />
                         <a
-                            href="mailto:info@pcalearning.in"
+                            href={`mailto:${siteConfig.contact.email}`}
                             className="hover:underline"
                         >
-                            info@pcalearning.in
+                            {siteConfig.contact.email}
                         </a>
                     </div>
                     <div className="flex gap-3 items-center">
                         <FaMobileScreen size={20} className="shrink-0" />
-                        <a href="tel:9051049912" className="hover:underline">
-                            9051049912
+                        <a href={`tel:${siteConfig.contact.phone.replace("+91-", "")}`} className="hover:underline">
+                            {siteConfig.contact.phone}
                         </a>
                     </div>
                 </div>

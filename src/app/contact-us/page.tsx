@@ -5,9 +5,11 @@ import {
     FaSquareFacebook,
     FaPhone,
     FaWhatsapp,
+    FaLinkedin,
 } from "react-icons/fa6";
 import { Metadata } from "next";
 import Footer from "@/components/Footer/Footer";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
     title: "Contact us",
@@ -71,7 +73,7 @@ export default function ContactUs() {
         <>
             <section
                 id="contact-us"
-                className="ContactUs relative min-h-full w-full bg-primary"
+                className="ContactUs relative w-full bg-primary"
             >
                 <div className="w-full h-full flex flex-col items-center bg-background rounded-b-md overflow-hidden shadow-md">
                     <div className="h-full w-full text-textColor flex flex-col px-6 py-4 md:px-12 md:py-10 lg:px-32 lg:py-20 max-w-[1200px]">
@@ -95,21 +97,28 @@ export default function ContactUs() {
                         </h3>
                         <div className="flex my-3 w-40 justify-start self-start gap-2 md:self-start">
                             <a
-                                href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr"
+                                href={siteConfig.socialLinks.facebook}
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <FaSquareFacebook size={35} />
                             </a>
                             <a
-                                href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr"
+                                href={siteConfig.socialLinks.instagram}
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <FaInstagram size={35} />
                             </a>
                             <a
-                                href="https://wa.me/message/4JR72ISSSSKUK1"
+                                href={siteConfig.socialLinks.linkedin}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FaLinkedin size={35} />
+                            </a>
+                            <a
+                                href={siteConfig.socialLinks.whatsapp}
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -120,20 +129,18 @@ export default function ContactUs() {
                             Our Address
                         </h3>
                         <p className="text-sm font-medium text-textColor text-gray-800 lg:text-base">
-                            3, Vivekananda Road P.O. Nabagram, Konnagar Dist:
-                            Hooghly State: West Bengal Pin: 712246 Land Mark:
-                            Near Nabagram Old Post Office
+                            {siteConfig.contact.addressFull}
                         </p>
                         <h3 className="font-semibold text-xl my-4 mb-2 flex">
                             Call us
                         </h3>
                         <ButtonLink
-                            href="tel:+91-9051049912"
+                            href={`tel:${siteConfig.contact.phone}`}
                             buttonType="primary-rounded"
                             className="my-4 mt-2 px-7 py-2 self-center md:self-start flex"
                         >
                             <FaPhone size={20} className={clsx(["mr-2"])} />{" "}
-                            <span>+91-9051049912</span>
+                            <span>{siteConfig.contact.phone}</span>
                         </ButtonLink>
                     </div>
                 </div>
