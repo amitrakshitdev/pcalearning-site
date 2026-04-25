@@ -2,9 +2,14 @@ import clsx from "clsx";
 import Image from "next/image";
 import ourStoryImage from "@/assets/images/our-stories-image.jpg";
 import Link from "next/link";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
+import {
+    FaSquareFacebook,
+    FaSquareXTwitter,
+    FaWhatsapp,
+} from "react-icons/fa6";
 import { ButtonLink } from "../ui/Buttons/Buttons";
+import { siteConfig } from "@/config/site";
 export default function OurStory() {
     return (
         <section
@@ -58,15 +63,34 @@ export default function OurStory() {
                         student, a professional, or someone who is just
                         interested in learning coding, we have a course for you.
                     </p>
-                    <div className={clsx(["flex my-3 w-24 justify-between"])}>
-                        <Link href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr">
-                            <FaSquareFacebook size={20} />
+                    <div
+                        className={clsx([
+                            "flex my-3 w-24 gap-x-2 justify-between",
+                        ])}
+                    >
+                        <Link
+                            href={siteConfig.socialLinks.facebook}
+                            target="_blank"
+                        >
+                            <FaSquareFacebook size={24} />
                         </Link>
-                        <Link href="/about-us">
-                            <FaLinkedin size={20} />
+                        <Link
+                            href={siteConfig.socialLinks.linkedin}
+                            target="_blank"
+                        >
+                            <FaLinkedin size={24} />
                         </Link>
-                        <Link href="https://www.facebook.com/share/1ApnRkzrqR/?mibextid=wwXIfr">
-                            <FaInstagram size={20} />
+                        <Link
+                            href={siteConfig.socialLinks.instagram}
+                            target="_blank"
+                        >
+                            <FaInstagram size={24} />
+                        </Link>
+                        <Link
+                            href={siteConfig.socialLinks.whatsapp}
+                            target="_blank"
+                        >
+                            <FaWhatsapp size={24} />
                         </Link>
                     </div>
                     <ButtonLink

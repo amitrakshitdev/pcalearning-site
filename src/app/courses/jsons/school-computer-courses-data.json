@@ -22,9 +22,7 @@
             "board": "CBSE",
             "class": "Class IX and Class X",
             "subjects": [
-                "Artificial Intelligence (Subject Code: 417)",
                 "Information Technology (Subject Code: 402)",
-                "Data Science (Subject Code: 419)",
                 "Computer Applications (Subject Code: 165)"
             ]
         },
@@ -32,8 +30,8 @@
             "board": "CBSE",
             "class": "Class XI and Class XII",
             "subjects": [
-                "Artificial Intelligence (Subject Code: 417)",
-                "Information Technology (Subject Code: 843)",
+                "Artificial Intelligence (Subject Code: 843)",
+                "Information Technology (Subject Code: 802)",
                 "Data Science (Subject Code: 844)",
                 "Computer Science (Subject Code: 083)",
                 "Informatics Practices (Subject Code: 065)"

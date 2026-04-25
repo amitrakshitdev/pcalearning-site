@@ -254,7 +254,7 @@ export default function CoursesPage() {
                         <CourseSection id="bsc" data={BscCourseData} />
                         <CourseSection id="mca" data={MCACouseData} />
                         <CourseSection
-                            id="entrace-exam"
+                            id="entrance-exam"
                             data={EntraceExamData}
                         />
                     </div>
